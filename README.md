@@ -6,6 +6,8 @@
 
 _A full-stack workspace that connects students, recruiters, and placement teams from first application to final offer._
 
+[🌐 **View the live project**](https://placehubpms.netlify.app/)
+
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](frontend)
 [![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](backend)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
