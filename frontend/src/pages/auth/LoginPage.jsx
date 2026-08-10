@@ -21,9 +21,7 @@ export default function LoginPage() {
     try {
       const user = await login(form.email, form.password);
       toast.success("Welcome back!");
-      if (!user.isVerified && user.role !== "admin")
-        navigate("/auth/verify-pending");
-      else navigate(`/${user.role}`);
+      navigate(`/${user.role}`);
     } catch (err) {
       toast.error(err.response?.data?.message || "Login failed");
     } finally {
@@ -63,14 +61,6 @@ export default function LoginPage() {
               error={errors.password}
               placeholder="••••••••"
             />
-            <div className="flex justify-end">
-              <Link
-                to="/auth/forgot-password"
-                className="text-sm text-primary-600 hover:underline"
-              >
-                Forgot password?
-              </Link>
-            </div>
             <Button type="submit" loading={loading} className="w-full">
               Sign In
             </Button>
